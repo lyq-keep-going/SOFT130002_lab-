@@ -1,0 +1,132 @@
+/*热门照片部分*/
+.hotpictures{
+    border-top: 4px solid rgba(5, 19, 53, 0.9);
+    margin-top: 20px;
+    padding-top: 30px;
+}
+.hotpictures div{
+    border: 10px white solid;
+    box-shadow: 0px 0px 10px rgba(130,130,130,0.58);
+    overflow: hidden;
+    width: 70%;
+    height: 170px;
+    margin-left: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.hotpictures div:nth-of-type(2n+1) img{
+    float: left;
+    padding: 10px;
+}
+.hotpictures div:nth-of-type(2n+2) img{
+    float: right;
+    padding: 10px;
+}
+/*多行文本溢出显示...代码*/
+.hotpictures p{
+    margin-top: 3%;
+    position:relative;
+    line-height:1.4em;
+    /*设置容器高度为3倍行高就是显示3行*/
+    height:5.6em;
+    overflow:hidden;
+    margin-left: 10px;
+}
+.hotpictures p::after {
+    content: '...';
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px 1px 35px;
+    background: #fff;
+}
+
+.hotpictures h2{
+    margin-top: 1.5%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "Kaushan";
+    src: url("../fonts/KaushanScript-Regular.otf");
+}
+
+.hotpictures h1{
+    font-family: Kaushan;
+    padding-left: 15%;
+    font-size: 30px;
+}
+
+.mainpicture h1{
+    font-family: Kaushan;
+    font-size: 80px;
+    z-index: 2;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+/*装饰悬浮部分(复用）*/
+.float img{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.float a img{
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+}
+
+.carousel-item img{
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+
+a.carousel-control-prev{
+    margin-left: 250px;
+}
+
+a.carousel-control-next{
+    margin-right: 250px;
+}
+
+.dropdown{
+    margin-left: 80%;
+}
+
+.dropdown-menu{
+ margin-left: -100px;
+}
+
+footer{
+    background-color: rgba(5, 19, 53, 0.9);
+    font-size: small;
+    height: 70px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer span{
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.navbar{
+    background-color: rgba(5, 19, 53, 0.9);
+}
+
+.nav-link{
+    color: white;
+}
+
+
+
+
+
+
+
+
