@@ -54,7 +54,7 @@ function timeTest(){
     const interval = window.setInterval(function () {
         mul.value *= 2;
         count++;
-        if(new Date().getSeconds() === 0 || count === 10){
+        if(new Date().getSeconds() >= 56 || count === 10){
             window.clearInterval(interval);
         }
     }, 5000);
