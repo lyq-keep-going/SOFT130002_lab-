@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Lecture7 Sample</title>
+    <style>
+        body{font-size:16pt;}
+        input{font-size:28pt;font-weight:bold;}
+    </style>
 </head>
 <body>
-$END$
+<p id="p1" name="p1">Hello W3C XHTML DOM!</p>
+<p id="p2" name="p2" class="attribute test">Go anywhere you want</p>
+<p id="p3" name="p3">Walk the tree with me!</p>
+<input type="button" value="show attribute" id="button1" name="button1">
 </body>
+<script>
+
+    document.getElementById("button1").onclick = function(){
+        var tnode = document.getElementById("p2");
+        tnode.classList.add("zdl");
+        for(var i=0;i<tnode.attributes.length;i++)
+            alert(tnode.attributes[i].nodeValue);
+    };
+
+</script>
 </html>
+
